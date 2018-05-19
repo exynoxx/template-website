@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255,35,35,0.9);
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+}
+
+.header-text {
+    grid-column: 1 / span 2;
+    margin: auto 20%;
+    font-family:arial;
+    color: rgba(255,255,255,1);
+    font-size: 28px;
+}
+
+.header-container {
+    grid-column: 5 / span 3;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+}
+
+.header-container div {
+    width: 1fr;
+    height: 100%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    font-family: arial;
+    color: white;
+    font-weight: bold;
+}
+
+.header-container div:hover {
+    background-color: rgba(171, 35, 35, 0.9);
+}
+
+.header-container p  {
+    padding-top: 5px;
+}
+
+
+/* END OF HEADER*/
+
+
+
+.frontpage {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,35,35,0.9);
+    box-shadow: 0 3px 10px #555;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 40px;
+}
+
+.frontpage img {
+    width: auto;
+    height: 500px;
+    grid-column: 3 / 3;
+}
+
+.page1{
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+}
+
+.page1 p {
+    margin-top: 20px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.page1 img {
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px 0px rgba(117,117,117,1);
+}
+
+.left{
+    grid-column: 2 / 2;
+}
+
+p.left {
+    text-align: right;
+}
+
+.right {
+    grid-column: 4 / 4;
+}
+
+.page2 {
+    width: 100%;
+    height: 800px;
+    margin-top: 60px;
+    background-color: rgba(90,0,255,0.9);
+    box-shadow: inset 0px 10px 20px -10px rgba(0,0,0,1);
+}
+
+.page2 h1{
+    width: 100%;
+    text-align: center;
+    font-family: arial;
+    font-size: 60px;
+    color: white;
+    margin: 0px;
+    padding-top: 150px;
+}
