@@ -73,6 +73,7 @@ body {
 .page1{
     width: 100%;
     margin-top: 60px;
+    margin-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 10px 1fr 1fr;
     grid-template-rows: auto auto;
@@ -106,8 +107,7 @@ p.left {
 
 .page2 {
     width: 100%;
-    height: 800px;
-    margin-top: 60px;
+    height: 900px;
     background-color: rgba(60, 76, 255, 0.9);
     box-shadow: inset 0px 10px 20px -10px rgba(0,0,0,1);
 }
