@@ -39,8 +39,14 @@ body {
     font-weight: bold;
 }
 
-.header-container div:hover {
-    background-color: rgba(171, 35, 35, 0.9);
+.header-container-hover-red div:hover {
+    background-color: rgba(170, 35, 35, 0.9);
+    box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,1);
+}
+
+.header-container-hover-blue div:hover {
+    background-color: rgba(40,40,170,0.9);
+    box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,1);
 }
 
 .header-container p  {

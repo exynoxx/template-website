@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>CSS GRID</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
     <div class="header">
         <p class="header-text">CSS GRID</p>
-        <div class="header-container">
+        <div class="header-container header-container-hover-red">
             <div id="button0"><p>Front Page</p></div>
             <div id="button1"><p>Features</p></div>
             <div id="button2"><p>Life button</p></div>
@@ -33,54 +33,7 @@
 
     <script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../lib/jquery-ui.js"></script>
-    <script>
+    <script type="text/javascript" src="script.js"></script>
 
-        $("#button0").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".frontpage").offset().top
-            }, 400);
-        });
-        $("#button1").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".page1").offset().top - 120
-            }, 500);
-        });
-        $("#button2").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".page2").offset().top - 59
-            }, 500);
-        });
-
-        var blueFunc = function () {
-            $(".header").animate({
-                backgroundColor: 'rgba(53,73,255,0.9)'
-            },500);
-        };
-
-        var redFunc = function () {
-            $(".header").animate({
-                backgroundColor: 'rgba(255,35,35,0.9)'
-            },500);
-        };
-
-        var blueMode = false;
-
-        $(window).scroll(function(){
-
-            var pos = $('.page2').position().top;
-            if ($(window).scrollTop() + 60 >  pos) {
-                if (!blueMode) {
-                    blueFunc();
-                    blueMode = true;
-                }
-            } else {
-                if (blueMode) {
-                    redFunc();
-                    blueMode = false;
-                }
-            }
-        });
-
-    </script>
 </body>
 </html>
